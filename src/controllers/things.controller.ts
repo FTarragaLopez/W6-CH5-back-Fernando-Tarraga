@@ -1,9 +1,9 @@
+/* eslint-disable no-useless-constructor */
 import { Response, Request, NextFunction } from 'express';
 import { Repo } from '../repository/repo.interface.js';
-import { Thing } from '../entities/thing.js';
+import { Thing } from '../entities/thing';
 
 export class ThingsController {
-  // eslint-disable-next-line no-useless-constructor, no-unused-vars
   constructor(public repo: Repo<Thing>) {}
 
   async getAll(_req: Request, resp: Response, next: NextFunction) {

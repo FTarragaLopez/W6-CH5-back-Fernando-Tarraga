@@ -1,6 +1,7 @@
 import { ThingsFileRepo } from './things.file.repo';
 import fs from 'fs/promises';
 jest.mock('fs/promises');
+export { ThingsFileRepo };
 
 describe('Given ThingsFileRepo', () => {
   // Arrange
